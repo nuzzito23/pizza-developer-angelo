@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    
+    <!-- formulario -->
+    <form action="" id="form">
+        <select name="" id="size">
+            <option value="pequena">Pequeña</option>
+            <option value="mediana">Mediana</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <!-- input type normalmente viene en grupo, agregando name tipo se permite seleccionar solo -->
+         <!-- les agregamos value para  que sea mas facil de trabajar en js --> 
+          <!-- for enlaza con el radio btn id al label -->
+        <label for=""> 
+            Simple
+        </label>   
+        <input type="radio" name="tipo" id="simple" class="type" value="0">
+        <label for="extra">
+            Ingredientes 
+         </label>   
+        <input type="radio" name="tipo" id="extra" class="type" value="1">
+    <div class="ingrdientes_extra">
+        <label for="">
+            Queso
+            <input type="checkbox" name="" id="" class="ingredientes" value="queso">
+        </label>
+        <label for="">
+            Jamon
+        <input type="checkbox" name="" id="" class="ingredientes" value="jamon">
+        </label>
+        <label for="">
+            Piña
+        <input type="checkbox" name="" id="" class="ingredientes" value="pina">
+        </label>
+    </div>
+        <label class="file" for="file">
+                <span>
+                    +
+                </span>
+            </label>
+            <input type="file" id="file" class="file">
+
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+    
+    
+
+    <div id="costo">
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

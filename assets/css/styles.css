@@ -1,0 +1,29 @@
+.ingrdientes_extra {
+    opacity: 0;
+    transition: all .5s;
+}
+
+#extra:checked ~ .ingrdientes_extra {
+    opacity: 1;
+}
+
+.file {
+    width: 45px;
+    height: 45px;
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.file:hover {
+    background-color: rgb(187, 114, 225);
+    box-shadow: 0 0 115px rgba(0, 0, 0, .5);
+}
+
+#file{
+    display: none;
+}
